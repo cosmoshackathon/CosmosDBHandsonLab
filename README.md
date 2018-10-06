@@ -14,7 +14,7 @@ Prior to starting these labs, you must have the following operating system and s
 | Software | Download Link |
 | --- | --- |
 | Git | [/git-scm.com/downloads](https://git-scm.com/downloads) |
-| .NET Core 2.1 (or greater) SDK <sup>2</sup> | [/download.microsoft.com/dotnet-core-sdk-2.1.402](https://www.microsoft.com/net/download/dotnet-core/2.1) |
+| .NET Core 2.1 (or greater) SDK <sup>2</sup> | [/download.microsoft.com/dotnet-core-sdk-2.1](https://www.microsoft.com/net/download/dotnet-core/2.1) |
 | Visual Studio Code | [/code.visualstudio.com/download](https://go.microsoft.com/fwlink/?Linkid=852157) |
 | C# Extensions |
 ---
