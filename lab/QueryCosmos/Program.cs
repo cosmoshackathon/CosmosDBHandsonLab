@@ -29,66 +29,66 @@ namespace Azure.CosmosSQL
             {
                 /******* Create Documents**************/
 
-                CreateDocuments().ConfigureAwait(false);
+                // CreateDocuments().ConfigureAwait(false);
 
                 /*******  Create Documents***********/
 
 
                 /*******  Query Document By Document Id*****************/
 
-                //string documentId = "acb113cb-ece6-4ad7-b53b-e269872c2db2";
-                //var response = GetDocument(documentId);
+                // string documentId = "acb113cb-ece6-4ad7-b53b-e269872c2db2";
+                // var response = GetDocument(documentId);
 
-                //Console.WriteLine(response.Result.User + " " + response.Result.Text);
-                //Console.WriteLine("1.2 - Query Document By Document Id - Complete");
+                // Console.WriteLine(response.Result.User.Name + " " + response.Result.Text);
+                // Console.WriteLine("1.2 - Query Document By Document Id - Complete");
 
                 /*******  Query Document By Document Id*****************/
 
                 /*******  UPDATE / REPLACE DOCUMENTS********************************/
 
-                //Console.WriteLine("1.3 - Update/Replace Documents - Start");
-                //string documentId = "acb113cb-ece6-4ad7-b53b-e269872c2db2";
-                //var response = GetDocument(documentId);
-                //var tweetToModify = response.Result;
-                //tweetToModify.User.screenName = "Azure Specialist";
-                //UpdateDocument(tweetToModify).ConfigureAwait(false);
-                //Console.WriteLine("1.3 - Update/Replace Documents - Complete");
+                // Console.WriteLine("1.3 - Update/Replace Documents - Start");
+                // string documentId = "acb113cb-ece6-4ad7-b53b-e269872c2db2";
+                // var response = GetDocument(documentId);
+                // var tweetToModify = response.Result;
+                // tweetToModify.User.ScreenName = "Azure Specialist";
+                // UpdateDocument(tweetToModify).ConfigureAwait(false);
+                // Console.WriteLine("1.3 - Update/Replace Documents - Complete");
 
                 /*******  UPDATE / REPLACE DOCUMENTS********************************/
 
 
                 /********* UPSERT DOCUMENTS********************************/
 
-                // Create a new Tweet
-                //var tweet = TweetManager.CreateTweet("Welcome to #Cosmo SQL API Level 500");
-                //UpsertDocument(tweet).ConfigureAwait(false);
+                //Create a new Tweet
+                // var tweet = TweetManager.CreateTweet("Welcome to #Cosmo SQL API Level 500");
+                // UpsertDocument(tweet).ConfigureAwait(false);
 
                 /********* UPSERT DOCUMENTS********************************/
 
                 /********************* DELETE DOCUMENT ****************************/
-                //var documentToDelete = "8685a809-83f9-48e6-a8b5-c189e35060c4";
-                //DeleteDocument(documentToDelete).ConfigureAwait(false);
+                // var documentToDelete = "c5eeb2f0-2c16-46a8-9031-b271093b4ecd";
+                // DeleteDocument(documentToDelete).ConfigureAwait(false);
 
                 /*************************************************************/
 
                 /***************************Query Documents (Tweets) By User*******************************/
-                //var tweets = GetTweetsByUser("AzureDev");
+                // var tweets = GetTweetsByUser("AzureDev");
 
-                //foreach (var tweet in tweets)
-                //{
+                // foreach (var tweet in tweets)
+                // {
                 //    Console.WriteLine(tweet.UserName + "-" + tweet.Message + "\n");
-                //}
+                // }
 
                 /***************************Query Documents (Tweets) By HashTag*******************************/
 
                 /***************************Query Documents (Tweets) By HashTag*******************************/
-                //Console.WriteLine("1.4 - Query Documents (Tweets) By HashTag Start");
-                //var tweets = GetTweetByHashTag("#Azure");
+                Console.WriteLine("1.4 - Query Documents (Tweets) By HashTag Start");
+                var tweets = GetTweetByHashTag("#marketing");
 
-                //foreach(var tweet in tweets)
-                //{
-                //    Console.WriteLine(tweet.UserName + "-" + tweet.Message + "\n");
-                //}
+                foreach(var tweet in tweets)
+                {
+                   Console.WriteLine(tweet.UserName + "-" + tweet.Message + "\n");
+                }
 
                 /***************************Query Documents (Tweets) By HashTag*******************************/
 
@@ -276,7 +276,7 @@ namespace Azure.CosmosSQL
         {
             var sql = new SqlQuerySpec
             {
-                QueryText = "SELECT value  { \"UserName\": t.user.name, \"Message\" : t.text} FROM t JOIN h IN t.HashTags WHERE h.Text = @hashTag",
+                QueryText = "SELECT value  { \"UserName\": t.user.name, \"Message\" : t.text} FROM t JOIN h IN t.hashTags WHERE h.text = @hashTag",
                             Parameters = new SqlParameterCollection {
                                 new SqlParameter { Name = "@hashTag", Value = hashTag.ToLower() }
                             }
