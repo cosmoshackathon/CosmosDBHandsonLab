@@ -52,9 +52,7 @@ In this lab, you will create an Azure Cosmos DB account, database, and multiple 
 	
 	1. In the **Collection Id** field, enter the collection Name.
 	
-	1. Select the Unlimited option for **Storage Capacity**
-	
-	1. In the **Partition key** field, specify the partition key (Property in the JSON document). 
+	1. Select the Fixed option for **Storage Capacity**
 	
 	1. In the **Throughput**, enter 1000 RU/sec
 	
