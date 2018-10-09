@@ -46,7 +46,7 @@ In this lab, you will create an Azure Cosmos DB account, database, and multiple 
 
 1. Next, Create New Collection by right clicking on the Database. In the new **Add Collection** blade, perform the following actions:
 
-	![Create Cosmos instance](./media/CreateCollection_1.PNG)
+	![Create Cosmos instance](./media/CreateCollection_2.PNG)
 
 	1. In the **Databaase id** field, choose the recently created database.
 	
