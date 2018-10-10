@@ -10,7 +10,7 @@ In this lab, you will create an Azure Cosmos DB account, database, and multiple 
 
 1. On the top-left side of the portal, click the **Create a resource** button (big green "+").
 	
-    ![Create a resource](./media/CreateAzureCosmosDB.PNG)
+    ![Create a resource](./media/CreateAzureCosmoDB.png)
 
 1. In the new **Azure Cosmos DB** blade, perform the following actions:
 
@@ -42,7 +42,7 @@ In this lab, you will create an Azure Cosmos DB account, database, and multiple 
 
 1. Once the CosmoDB instance is created.
 
-    ![Create Cosmos instance](./media/CreateNewDatabase.PNG)
+    ![Create Cosmos instance](./media/CreateNewDatabase.png)
 
     1. Select the CosmoDB instance. Click on the Resource groups, then the Resource group you just created and finally the CosmoDB.
 
