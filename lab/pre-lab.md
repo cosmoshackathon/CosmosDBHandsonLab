@@ -13,7 +13,7 @@ In this lab, you will create an Azure Cosmos DB account, database, and multiple 
 
 1. In the folder *script*, from the root folder you will find the script [CosmosResourcesScript.bash](./scripts/CosmosResourcesScript.bash). Open it with VSCode, we will be editing it and copy-pasting piece of it in the Cloud Shell. 
 
-1. Edit the variables at the beginning of the script.
+1. Edit the variables at the beginning of the script. 
 
 ```bash
 # Set variables for the new account, database, and collection
