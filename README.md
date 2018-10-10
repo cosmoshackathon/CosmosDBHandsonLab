@@ -24,9 +24,9 @@ Prior to starting these labs, you must have the following operating system and s
 *It is recommended to complete the labs in the order specified below:*
 
 - [Pre-lab: Creating an Azure Cosmos DB account](./lab/pre-lab.md)
-- Lab 1: Querying an Azure Cosmos DB Database using the SQL API
+- [Lab 1: Querying an Azure Cosmos DB Database using the SQL API](./lab/QueryCosmos/ReadMe.md)
 - [Lab 2: Change Feed Demo - Azure Function](./lab/ChangeFeed/AuditTweetsAzureFunc/README.md)
-- Lab 3: Change Feed Demo - Change Feed Processor Library
+- [Lab 3: Change Feed Demo - Change Feed Processor Library](./lab/ChangeFeed/ChangeFeedDemo.md)
 - [Lab 4: Spark Connector](./lab/SparkConnectionsDemo/readme.md)
 
 # Notes
