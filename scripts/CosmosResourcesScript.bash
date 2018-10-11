@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Set variables for the new account, database, and collection
+# Make sure to use a unique name below. It is possible someone has already used this name.
 resourceGroupName='myResourceGroup'
 location='eastus'
 name='tweet'
